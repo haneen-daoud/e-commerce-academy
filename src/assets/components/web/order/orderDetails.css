@@ -1,0 +1,33 @@
+.table {
+    width: 100%!important;
+    border-collapse: collapse!important;
+    margin-bottom: 20px!important;
+  }
+
+  .table th {
+    background-color:#605851!important;/* Pink color */
+    color: white!important;
+  }
+  .table tr .btn{
+    color: #56381e;
+    border-radius: 0!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    -ms-border-radius: 0!important;
+    -o-border-radius: 0!important;
+    color: white;
+}
+ 
+  .table tr .btn:hover ,.table tr .btn .Link:hover {
+    
+    background-color: #FEF1E6!important; 
+    color: #56381e!important;
+  }
+  td:hover a{
+    color: #56381e!important;
+}
+td a, td{
+    color: #56381e!important;
+    text-decoration: none!important;
+    font-weight: 500!important;
+}

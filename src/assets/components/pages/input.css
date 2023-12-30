@@ -1,0 +1,13 @@
+.input-group{
+    background-color: teal;
+   
+}
+.input-group input{
+    background-color: aliceblue;
+}
+.form-main{
+background-color: antiquewhite;
+}
+.input-group label{
+    color: white;
+}

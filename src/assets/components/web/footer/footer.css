@@ -1,0 +1,28 @@
+    
+.footer{
+    padding: 75px 15px;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+}
+.footer-content h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Carattere";
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    
+}
+.footer-content a
+{
+    color: #5C4E40;
+    font-weight: 700;
+}
+.footer-content a:hover{
+    color: #eda62a;
+   
+}
+.footer span{
+    color: #5C4E40;
+
+}
