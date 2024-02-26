@@ -76,10 +76,14 @@ const navigate=useNavigate()
     
   return (
     
+  
+
     <div className=' container'>
-        <div className="d-flex justify-content-center ">
-        <form onSubmit={formik.handleSubmit} encType='multipart/form-data' className="p-4  w-50 form-main ms-5 mt-5  pt-4  rounded-3 border-3">
-        <h1 className='text-black'>Log in</h1>
+        <div className="row">
+            <div className="col-md-6 back-log-register"></div>
+            <div className=" col-md-6 d-flex justify-content-center ">
+        <form onSubmit={formik.handleSubmit} encType='multipart/form-data' className="form-log form-main   rounded-3 border-3">
+        <h2 className='text-black text-center fs-1 '>Log in</h2>
 
         {renderInputs}
         <button type='submit' className ='button-48' disabled={!formik.isValid}><span>Login</span></button>
@@ -87,6 +91,10 @@ const navigate=useNavigate()
       
         </form>
     </div>
+        </div>
+       
     </div>
+  
+   
   )
 }

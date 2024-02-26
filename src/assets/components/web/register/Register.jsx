@@ -93,10 +93,15 @@ export default function Register() {
   )
   return (
     <>
-    <div className="container">
-      <div className="d-flex justify-content-center ">
+    
+    <div className="container  ">
+    <div className="row">
 
-      <form onSubmit={formik.handleSubmit} encType='multipart/form-data'  className="h-50 w-50 form-main ms-5 mt-5  pt-4  rounded-3 border-3">
+    <div className="col-md-6 back-log-register"></div>
+
+    <div className=" col-md-6 d-flex justify-content-center ">
+
+      <form onSubmit={formik.handleSubmit} encType='multipart/form-data'  className=" form-main  form-log   rounded-3 border-3">
       <h2 className='text-center pb-3'>create account</h2>
 
         {renderInputs}
@@ -105,6 +110,8 @@ export default function Register() {
       </form>
     </div>
     </div>
+    </div>
+   
     </>
   )
 }

@@ -4,6 +4,12 @@ import { CartContext } from '../context/Cart'
 import './navbar.css'
 import Logo from "./imgLogo.jpeg"
 import { UserContext } from '../context/User'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// تسجيل الأيقونة
+library.add(faCartShopping);
 
 export default function Navbar({ user, setUser }) {
   const { count } = useContext(CartContext)
@@ -19,17 +25,19 @@ const logout = () => {
 }
  
   return (
-
+    
     <nav className="navbar navbar-expand-lg py-3 ">
+    
+
       <div className="container">
-        <a className="navbar-brand " href="#">HSTORE<img src={Logo} className='img-fluid ms-3' width={'50px'}></img></a>
+        <a className="navbar-brand  " href="#">HSTORE<img src={Logo} className='img-fluid ms-3' width={'50px'}></img></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home </Link>
+              <Link className="nav-link active" to="/">Home </Link>
             </li>
             <li className="nav-item">
               <Link to={'/categories'} className="nav-link" href="#">Categories</Link>
@@ -40,9 +48,11 @@ const logout = () => {
               <Link to={'/allProduct'} className="nav-link" href="#">Products</Link>
             </li>
             {user && <li className="nav-item">
-              <Link className="nav-link" to={"/cart"}>Cart <i class="fi fi-rr-shopping-cart">{count}</i></Link>
+              <Link className="nav-link" to={"/cart"}>Cart <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />{count}</Link>
             </li>}
-
+            <li className="nav-item">
+              <Link to={'/contact'} className="nav-link" href="#">Contact</Link>
+            </li>
 
           </ul>
           <ul className="navbar-nav">

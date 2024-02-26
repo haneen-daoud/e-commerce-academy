@@ -25,6 +25,7 @@ import OrderDetails from "./assets/components/web/order/OrderDetails.jsx";
 import Review from "./assets/components/web/review/Review.jsx";
 import AllProduct from "./assets/components/web/products/AllProduct.jsx";
 import './index.css'
+import Contact from "./assets/components/web/contact/Contact.jsx"
 export default function App() {
 
   let { setUserToken } = useContext(UserContext)
@@ -62,11 +63,16 @@ export default function App() {
         },
         {
           index: true,
+        
           element: <Home />
         },
         {
           path: 'categories',
           element: <Categories />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
         },
         {
           path: '/forget',
@@ -134,6 +140,10 @@ export default function App() {
           path: '/products/category/:categoryId/review',
           element: <Review />
         },
+        {
+          path: 'categories',
+          element: <Categories />
+        },
        
         {
           path: '*',
@@ -149,10 +159,7 @@ export default function App() {
         path: 'home',
         element: <HomeDashboard />
       }
-        , {
-        path: 'categories',
-        element: <CategoriesDashboard />
-      },
+      ,
       {
         path: '*',
         element: <h2>page not found --- dashboard</h2>

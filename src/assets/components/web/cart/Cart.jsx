@@ -18,8 +18,6 @@ export default function Cart() {
   }
   const removeCart = async (productId) => {
     const res = await removeItemContext(productId)
-
-
     return res
   }
   const removeAllCart =async() => {
@@ -174,8 +172,8 @@ export default function Cart() {
                 <button className='button-48 w-50 ' onClick={()=>removeAllCart()}><span>Clear all</span></button>
               </div>
             </div>
-            <div className="cart-summary">
-              <h2>Cart summary</h2>
+            <div className="cart-summary ">
+              <h2 >Cart summary</h2>
               <div className="summery-items">
                 <div className="summary-item">
                   <div className="form-group">

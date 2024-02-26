@@ -12,7 +12,7 @@ export default function Profile() {
   return (
     <>
     
-    <div className="profile ">
+    <div className="profile  ">
       <div className="d-flex">
       <div className="col-md-3  left-menu position-relative">
 
@@ -56,8 +56,8 @@ export default function Profile() {
                  alt="hugenerd"
                   width={30}
                  height={30}
-                 className="rounded-circle"
-             />
+                 className="rounded-circle"/>
+
                 <span className="d-none d-sm-inline mx-1">welcome</span>
               
 

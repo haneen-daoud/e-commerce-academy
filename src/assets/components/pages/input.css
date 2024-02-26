@@ -1,12 +1,11 @@
-.input-group{
-    background-color: teal;
-   
-}
+
+
 .input-group input{
     background-color: aliceblue;
 }
 .form-main{
-background-color: antiquewhite;
+background-color: rgb(207, 207, 207)!important;
+
 }
 .input-group label{
     color: white;

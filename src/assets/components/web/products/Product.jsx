@@ -72,26 +72,30 @@ if(isLoading)
 
           <h2 className='py-5 mt-5 rev text-center'>Reviews</h2>
 
-          <div className=" row  mt-5 d-flex">
-            {data?.reviews.map((review) => (
-              <div className="card col-md-3 mb-3 py-4">
-                <img src={review.createdBy.image.secure_url} className={` img-fluid rounded-3 `} width={'70px'} />
-                <div className="card-body text-center">
-                  <h5 className="card-title">{review.createdBy.userName}</h5>
-                  <p className="card-text text-dark">
-                    {getStars(review.rating)}
-                  </p>
-                  <p className="card-text">
-                    <small className="text-body-secondary">
-                      {review.comment}
-                    </small>
-                  </p>
-                </div>
-              </div>
-          ))
-          }:<h2>no review</h2>
+          <div className="row mt-5 d-flex">
+  {data && data.reviews.length > 0 ? (
+    data.reviews.map((review) => (
+      <div className="card col-md-3 mb-3 py-4" key={review.id}> {/* تأكد من إضافة مفتاح فريد هنا */}
+        <img src={review.createdBy.image.secure_url} className="img-fluid rounded-3" alt="User" width={'70px'} />
+        <div className="card-body text-center">
+          <h5 className="card-title">{review.createdBy.userName}</h5>
+          <p className="card-text text-dark">
+            {/* افترض أن `getStars` هي دالة لتوليد النجوم بناءً على التقييم */}
+            {getStars(review.rating)}
+          </p>
+          <p className="card-text">
+            <small className="text-body-secondary">
+              {review.comment}
+            </small>
+          </p>
         </div>
-        
+      </div>
+    ))
+  ) : (
+    <h2>no review</h2>
+  )}
+</div>
+
        
       </div>
    </div>

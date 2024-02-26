@@ -32,7 +32,7 @@
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #5e4d40;
+  background-color: #142f4e!important;;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -49,11 +49,11 @@
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
 .button-48:hover{
-  color: #FFFFFF;
+  color: #ffffff;
 
 }
 .button-48:after {
-  background-color: #FFFFFF;
+  background-color: #142f4e!important;;
 }
 
 .button-48 span {

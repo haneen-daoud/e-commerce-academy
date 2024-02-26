@@ -9,15 +9,34 @@
     animation: rotation 1s linear infinite;
 }
 .input-group{
-    background-color: teal;
+    background-color: rgb(56, 34, 88);
    
 }
 .input-group input{
-    background-color: aliceblue;
+    background-color: rgb(87, 91, 95)!important;
 }
 .form-main{
-background-color: antiquewhite;
+background-color: transparent!important;
 }
 .input-group label{
     color: white;
+}
+.back-log-register{
+background-image: url("./image-login/back-log.jpg");
+background-size: cover;
+
+background-repeat: no-repeat;
+}
+
+
+.form-log
+{
+opacity: unset;
+
+}
+form{
+    padding: 1em!important;
+    background-color: transparent!important;
+    box-shadow: none;
+
 }

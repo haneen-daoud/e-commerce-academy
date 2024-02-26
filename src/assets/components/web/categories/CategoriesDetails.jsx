@@ -18,6 +18,7 @@ export default function CategoriesDetails() {
     return <span class="loader"></span>
   }
   return (
+    
 <div className="container">
     <div className="row">
     {data?.length?data.map((product)=>

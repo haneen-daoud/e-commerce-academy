@@ -90,9 +90,8 @@ export default function Review() {
           <div className=" my-4 d-block m-auto w-50 ">
             <button
               type="submit"
-              className=" button-48 text-center text-black"
-             role="button"
-            ><span>Post Review</span></button>
+              className=" button-48 text-center "
+             role="button" ><span>Post Review</span></button>
           </div>
         </form>
       </div>

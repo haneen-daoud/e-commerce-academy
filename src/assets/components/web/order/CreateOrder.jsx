@@ -105,7 +105,7 @@ if (isLoading) {
       <div className="container">
         <div className="d-flex">
       
-            <div className="products " id="products">
+            <div className="products  " id="products">
               
               {data?.products ? (data.products.map((product) =>
                 <div className=" col-md-6 card-product text-center ms-5 mt-5 pt-4  rounded-3 border-3" key={product._id}>
@@ -128,10 +128,10 @@ if (isLoading) {
           </div>
      
         <form onSubmit={formik.handleSubmit} encType='multipart/form-data' className='form-main col-md-7 h-50 margin-auto' >
-        <h2 className='text-center'>create order</h2>
+        <h2 className='text-center text-black '>CREATE ORDER</h2>
         {renderInputs}
         <div className=' text-center'>
-        <button type='submit' disabled={!formik.isValid} className="button-48 text-black"><span>order to install</span></button>
+        <button type='submit' disabled={!formik.isValid} className="button-48 "><span>order to install</span></button>
         </div>
         </form>
     </div>

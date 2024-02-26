@@ -1,13 +1,19 @@
 .swiper {
     padding: 50px;
-    background-color: #FEF1E6;
+    background-color: #dfdedc;
 
 }
 
 .swiper-pagination-bullet {
-    background-color: #362c21;
+    background-color: #513720;
 }
-
+.category-main-image{
+background-image: url("../categories/imgCategore/hero-1.jpg.webp");
+background-size: cover;
+width: 100%;
+height: 600px;
+background-position: top;
+}
 .category {
     display: flex;
     flex-direction: column;
@@ -17,17 +23,146 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     text-align: center;
     
+    
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     content: 'prev';
-    background-color: #FEF1E6;
-    color: #56381e;
+    background-color: #f9f9f9;
+    color: #b66d2d;
+    padding: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
+    background-color: #f9f9f9;
     color: #56381e;
-    background-color: #FEF1E6;
+    padding: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 
 }
+.icon-Categories{
+    color: #142f4e!important;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.icon-Categories:hover{
+    background-color: white;
+}
 
+/*start press page*/
+.press{
+    background-color: #dfdedc;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.press-col{
+    padding: 5px;
+    background-color: white;
+    
+}
+.press-content .press-col{
+    padding-inline: 30px;
+}
+.press-product{
+    color: #cccccc;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 70px;
+    
+}
+.image-press img{
+    width: 100%;
+    height: 100%;
+}
+.press-product{
+    position: relative;
+    padding-bottom: 7rem;
+}
+.press-span{
+    color: #cccccc;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 11px;
+   
+}
+
+.press-content-lower{
+margin-top: 2.5rem;
+}
+.title{
+    color: #f1a31a;
+    font-size: 14px;
+    font-weight: 400;
+}
+.press h4 a{
+    
+    color: black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.press h4:hover a{
+    color:#f1a31a ;
+}
+/*recent product*/
+.title-recent {
+position: relative;
+}
+.title-recent h2::after{
+    content: ' ';
+    top: 20px;
+    left: 17rem;
+    width: 85%;
+    height:2px;
+    position: absolute;
+    background-color: rgb(209, 211, 211);
+}
+.latest-work .image a{
+    position: relative;
+    overflow: hidden;
+
+}
+.latest-work .image a::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #f1a31a;
+    opacity: 0;
+}
+.latest-work .carousel-indicators .active {
+    background-color: orange;
+}
+.latest-work .news-item-home .image a::after{
+    background-color: white;
+}
+.news-item-home:hover .news-title a{
+    color: orange!important;
+}
+.latest-work .news-item-home:hover .image a img{
+    rotate:2deg;
+    opacity: 0.5;
+}
+.btn-all-product .button-32{
+    background-color: rgb(172, 118, 65);
+    color: #050505!important;
+}
+.btn-all-product .button-32:hover{
+    background-color: rgb(138, 105, 59);
+    color: #56381e!important;
+}
