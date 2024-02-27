@@ -14,7 +14,7 @@ export default function Profile() {
     
     <div className="profile  ">
       <div className="d-flex">
-      <div className="col-md-3  left-menu position-relative">
+      <div className="col-md-3 col-sm-12 left-menu position-relative">
 
           <div className="w-100  Menu-item ">
               <a href="/"

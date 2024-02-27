@@ -17,10 +17,10 @@ export default function UserInfo() {
   <span></span>
   </div>  
   <div className="row ">
-    <div className="col-md-6 justify-content-center align-items-center d-flex">
+    <div className="col-md-6 col-sm-12 justify-content-center align-items-center d-flex">
        <img src={userData.image.secure_url} className='img-fluid img-info w-50 ' />
 </div>
-<div className="col-md-6">
+<div className="col-md-6 col-sm-12">
        <a href='#'><FontAwesomeIcon icon={faPenToSquare} />
 change profile information</a>
 

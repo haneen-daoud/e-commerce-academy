@@ -166,3 +166,22 @@ position: relative;
     background-color: rgb(138, 105, 59);
     color: #56381e!important;
 }
+.btn-all-product ,.blog-content{
+    justify-content: end;
+}
+.btn-all-product{
+    margin-left: 40px;
+}
+.news-item-home .image img{
+    width: 100%!important;
+}
+@media only screen and (max-width: 575px) {
+
+.btn-all-product ,.blog-content{
+margin-left: 0!important;
+justify-content: center!important;
+}
+.news-item-home .image1 img{
+    width: fit-content!important;
+}
+}

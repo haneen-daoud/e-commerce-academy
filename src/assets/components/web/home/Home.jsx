@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <>
       <div className="container">
-      <div className="Home d-flex ">
+      <div className="Home  ">
 
-    <div className='Home-page w-50'>
+    <div className='Home-page '>
     </div>
     <div className="home-content  text-center ">
       <img src={imgContent} alt='img-logo' className='img-fluid w-50 '/>
@@ -81,8 +81,9 @@ export default function Home() {
     <div className="header-content  ">
 
    <div className="row">
-   <div className="col-md-6  align-content-center ">
-        <div className='w-75'><p className=' fs-3'>We always stay with our clients and respect their business. We deliver 100% and provide instant response to help them succeed in constantly changing and challenging business world.</p></div>
+   <div className="col-md-6 col-sm-12  align-content-center  ">
+        <div className='social-media-box'>
+          <p className=' fs-3'>We always stay with our clients and respect their business. We deliver 100% and provide instant response to help them succeed in constantly changing and challenging business world.</p></div>
       <div className="social-media mt-4  d-flex  gap-4 ">
         <div className="icon border rounded-circle d-flex justify-content-center align-items-center ">
         <FontAwesomeIcon icon={faFacebookF}  />
@@ -102,7 +103,7 @@ export default function Home() {
      </div>
      <div className="col-md-6">
      <div className="newsletter-form">
-  <h2>Subscribe Our Newsletter</h2>
+  <h2 >Subscribe Our Newsletter</h2>
   <p>Phasellus lacinia fermentum bibendum. Interdum et malesuada fames ac</p>
   <form action="#">
     <input type="email" placeholder="Enter your email address" required />

@@ -12,10 +12,10 @@ export default function UserContact() {
   <div className="container">
   <div className="contact-container">
     <div className="row">
-    <div className="col-md-4 justify-content-center align-items-center d-flex">
+    <div className="col-md-4 col-sm-12 justify-content-center align-items-center d-flex">
        <img src={userData.image.secure_url} className='img-fluid img-info w-50 ' />
 </div>
-      <div className="col-md-8">
+      <div className="col-md-8 col-sm-12">
       <h2 className='text-center'>Contact Information</h2>
     <div className="contact-in">
       <strong>Address:</strong> 123 Main Street, City, Country

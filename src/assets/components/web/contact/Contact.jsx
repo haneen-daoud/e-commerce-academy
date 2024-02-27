@@ -20,8 +20,8 @@ export default function Contact() {
 {/*contact form section*/}
 <div className="contact-info">
   <h2 className="text-center w-50 m-auto">Contact us for any further questions, possible projects &amp; business partnerships</h2>
-  <div className=" px-5 d-flex pt-5 mt-5 ">
-    <div className="col-md-7">
+  <div className=" px-5 contact-box pt-5 mt-5 ">
+    <div className="col-md-7 col-sm-12">
     <div className="contact-form">
     <div className="contact-form-content">
       <div className="contact-title text-center pb-4">
@@ -58,7 +58,7 @@ export default function Contact() {
 
     </div>
 
-    <div className="inf-contact px-5 pt-5   col-md-5">
+    <div className="inf-contact px-5 pt-5 col-sm-12  col-md-5">
 
       <div className="mt-3 ">
         <div className="upper-contact-info d-flex justify-content-between">

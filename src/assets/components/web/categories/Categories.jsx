@@ -155,7 +155,7 @@ export default function Categories() {
   <div className=" ">
     <div className="header-ser  row pb-3  d-flex align-items-center ">
      
-      <div className="blog-content  col-md-7 d-flex justify-content-end">
+      <div className="blog-content  col-md-7 d-flex ">
         <ul className="nav nav-tabs d-flex  border-0" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <button className="nav-link active text-black-50" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Formal</button>
@@ -169,7 +169,7 @@ export default function Categories() {
         
         </ul>
       </div>
-      <div className="  col-md-4 d-flex  btn-all-product  justify-content-end ms-5  pe-0">
+      <div className="  col-md-4 col-sm-12 d-flex  btn-all-product    pe-0">
       <button type="submit" className="button-32 p-2" role="button"><Link to="/allProduct" className='text-white'>All Product</Link></button>
       </div>
     </div>
@@ -223,7 +223,7 @@ export default function Categories() {
         <div className="row">
           <div className="col-md-12 col-ms-12 col-lg-4 pt-5  d-flex justify-content-center text-center">
             <div className="news-item-home news-item   ">
-              <div className="image">
+              <div className=" image">
                 <a href="#">
                 <img src={sport1} className="w-100" alt="group of people" />
 </a>

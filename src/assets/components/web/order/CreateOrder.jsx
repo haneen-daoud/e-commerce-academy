@@ -103,7 +103,7 @@ if (isLoading) {
   return (
 <div className="cart">
       <div className="container">
-        <div className="d-flex">
+        <div className=" cart-box">
       
             <div className="products  " id="products">
               
